@@ -18,8 +18,7 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0",
-    "simplelightbox": "^2.10.4"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
@@ -30,6 +29,7 @@
     "path-browserify": "^1.0.1",
     "posthtml-include": "^1.7.4",
     "process": "^0.11.10",
+    "simplelightbox": "^2.10.4",
     "util": "^0.12.4"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
