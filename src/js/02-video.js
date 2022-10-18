@@ -17,7 +17,6 @@ import throttle from 'lodash.throttle';
 
    function onPlay (data) {
       localStorage.setItem(TIME_KEY, JSON.stringify(data.seconds));
-      //console.log(localStorage.getItem(TIME_KEY));
     };
     
     player.on('timeupdate', throttle(onPlay, 1000));
