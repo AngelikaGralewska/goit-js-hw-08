@@ -11,12 +11,11 @@ formDataSave();
 
 form.addEventListener('submit', event => {
     event.preventDefault();
-    event.currentTarget.reset();
-    
+   
     const localStorageData = JSON.parse(localStorage.getItem(FEEDBACK_KEY));
+
     form.reset();
 
-    localStorage.removeItem(FEEDBACK_KEY);
     console.log(localStorageData)
 });
 
