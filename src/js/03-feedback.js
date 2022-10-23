@@ -38,3 +38,12 @@ function formDataSave() {
 
   Object( { email: textarea.value, message: input.value })
 };
+
+const storage = localStorage.getItem(FEEDBACK_KEY); 
+const parsedStorageData = JSON.parse(storage); 
+
+const afterRefresh = () => { 
+    if (parsedStorageData !== null) { input.value = parsedStorageData.email; textarea.value = parsedStorageData.message; }; 
+  }; 
+
+afterRefresh();
