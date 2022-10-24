@@ -42,8 +42,14 @@ function formDataSave() {
 const storage = localStorage.getItem(FEEDBACK_KEY); 
 const parsedStorageData = JSON.parse(storage); 
 
-const afterRefresh = () => { 
-    if (parsedStorageData !== null) { input.value = parsedStorageData.email; textarea.value = parsedStorageData.message; }; 
-  }; 
 
+
+const afterRefresh = () => { 
+    if (parsedStorageData !== null) { 
+    textarea.value = parsedStorageData.message || '';
+    input.value = parsedStorageData.email || '';
+  };
+}
 afterRefresh();
+
+
